@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 *, ::after, ::before{
-    box-sizing: border-box;  
+    box-sizing: border-box; 
 }
+
 body {  color:  #434455; 
     background-color:#FFFFFF ;
     font-family: Roboto, sans-serif;
@@ -20,9 +21,19 @@ img {
     display: block;
 }
 .container{
-    max-width: 1158px;
     padding: 0 15px;
     margin:0 auto;
+    
+    @media screen and (min-width: 320px){
+    width: 320px;
+    }
+    @media screen and (min-width: 800px){
+     width: 800px;   
+    }
+    @media screen and (min-width: 1158px){
+     width: 1158px; 
+    }
+    
 }
 .p{
 margin: 0;
