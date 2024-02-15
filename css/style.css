@@ -810,7 +810,7 @@ fill: #F4F4FD;
         gap: 72px;
     }     
     .background {
-       width: calc((100% - 32px) / 2); 
+     width: calc((100% - 3 * 24px) / 2);
     
     }
         
