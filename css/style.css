@@ -810,8 +810,8 @@ fill: #F4F4FD;
         gap: 72px;
     }     
     .background {
-     width: calc((100% - 3 * 24px) / 2);
-    
+     width: calc((100% - 3 * 48px) / 2);
+    margin: 0 auto;
     }
         
 }
@@ -831,4 +831,15 @@ fill: #F4F4FD;
     .portfolioitem {
         width: calc((100% - 48px) / 3);
     }
+    .section-team {
+        margin:0 auto; 
+         padding-top: 12x; 
+         padding-bottom: 120px;  
+     }
+     .team-teatle-link{
+         gap: 24px;
+     }     
+     .background {
+      width: calc((100% - 3 * 24px) / 4);
+     }
 }
