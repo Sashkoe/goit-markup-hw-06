@@ -21,10 +21,12 @@ body {  color:  #434455;
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .container{
    width: 320px;
-    padding: 0 ;
+    padding: 0 15px;
     margin:0 auto;
 }
 .p{
@@ -193,9 +195,11 @@ margin: 0 auto;
 
 }
 .item{
-    Display:flex; 
-    gap: 24px;
-    
+    /* gap: 24px; */
+    gap: 72px;
+    /* gap: 24px; */
+    display: flex;
+    flex-direction: column;
 }
 .title-advantages{
     text-align: center;
@@ -219,35 +223,50 @@ clip-path: inset(100%);
 clip: rect(0 0 0 0);
 overflow: hidden;
 }
-   
+.our-qualities {
+   background: #FFF;
+    padding: 96px 0; 
+}
+    
 .stategy-item{
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+    width: 100%;
 }
 .strategy-offers{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 112px;
-    background-color: #f4f4fd;
+    padding: 24px 100px;
     border-radius: 4px;
-    margin-bottom: 8px;
     border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    margin-bottom: 8px;
 }
 
 .stategy-title {
 color:#2E2F42 ;
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2; 
-letter-spacing: 0.4px;
+/* font-size: 20px; */
+/* font-weight: 500;
+line-height: 1.2;  */
+letter-spacing: 0.02em;
 margin-bottom: 8px;
-
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+text-align: center;
 }
 .stategy-section {
-    font-size: 16px;
+    /* font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    width: 264px;
+    width: 264px; */
+
+    color:#434455;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 .strategy-icon{
     margin: 24px 100px;
@@ -263,10 +282,13 @@ margin-bottom: 8px;
 
 }
 .team-teatle-link{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    gap:24px;
-  
+    gap:24px; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
 }
 .portfolio-ul{
     display: flex;
@@ -326,7 +348,10 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
 
 }
 .team{
-    background-color: #f4f4fd;
+    .team{
+        background-color: #f4f4fd;
+        padding: 96px 12px;
+    }
 }
 .markdiv{
    padding: 32px 0;
@@ -346,7 +371,10 @@ line-height: 1.5;
 letter-spacing: 0.32px;
 text-align: center;
 }
-
+.our-team{
+    background: #F4F4FD;
+    padding: 96px 0;
+}
 .list-portfolio{
     display: flex;
     flex-wrap: wrap;
@@ -407,6 +435,7 @@ font-weight: 700;
 letter-spacing: 0.72px;
 text-transform: capitalize;
 margin-bottom: 72px;
+
 
 }
 .list-second{    color:  #2E2F42;
@@ -796,26 +825,42 @@ fill: #F4F4FD;
     }
       
     .list-portfolio{
-       gap: 24px;
+        gap: 72px 24px;
     }
     .portfolioitem {
         width: calc((100% - 48px) / 2); 
     }
-    .section-team {
-       margin:0 auto; 
-        padding-top: 60x; 
-        padding-bottom: 60px;  
-    }
     .team-teatle-link{
-        gap: 72px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
     }     
     .background {
-     width: calc((100% - 2* 48px) / 2);
-    margin: 0 auto;
+        width: calc((100% - 24px) / 2)
     }
-        
-}
+    .team-teatle-link{
+        gap: 64px 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .item{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    .stategy-item {
+        width: calc((100% - 24px) / 2);
+    }
+    .stategy-title{
+        text-transform: capitalize;
+        text-align: start;
+    }
+    }
+
 @media screen and ( min-width: 1158px){
+
+
     .container{
         width: 1158px;
     }
@@ -833,7 +878,7 @@ fill: #F4F4FD;
     }
     .section-team {
         margin:0 auto; 
-         padding-top: 12x; 
+         padding-top: 120x; 
          padding-bottom: 120px;  
      }
      .team-teatle-link{
@@ -842,4 +887,29 @@ fill: #F4F4FD;
      .background {
       width: calc((100% - 3 * 24px) / 4);
      }
+     .item{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:  24px;
+    }
+    .stategy-item {
+        width: calc((100% - 72px) / 4);
+    }
+    .stategy-title{
+        text-transform: capitalize;
+        text-align: start;
+}
+.strategy-offers{
+    display: flex;
+}
+.stategy-title{
+    text-transform: capitalize;
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.20;
+}
+.stategy-section{
+    font-weight: 400;
+}
 }
