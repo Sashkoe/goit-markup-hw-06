@@ -12,7 +12,7 @@
     
   </head>
  <body>
- <!-- <header class="header-page">
+ <header class="header-page">
    <div class="page-header-container container ">
     <nav class="page-header-nav"> 
 <a class="logo" href="./index.html">Web<span class="logo-accent">Studio</span> </a>
@@ -27,9 +27,33 @@
  <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
  <li><a class="contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
 </ul>
- </address> 
+ </address>
+<button type="button" class="header-open-btn is-open">
+        <svg class="icon-burger" width="24" height="24" >
+           <use href="./images/symbol-defs.svg#icon-menu-header"></use>
+        </svg>
+     </button>
+</div>
+<div class="mob-menu">
+<button type="button" class="menu-close-btn">
+    <svg class="close" width="8" height="8" >
+        <use href="./images/symbol-defs.svg#icon-closes"></use>
+     </svg>
+</button>
+<ul class="mob-links">
+    <li><a class="mob-header-link caret" href="./index.html" target="_blank">Studio</a></li>
+    <li><a class="mob-header-link" href="" target="_blank">Portfolio</a></li>
+    <li><a class="mob-header-link" href="" target="_blank">Contacts</a></li>
+ </ul>
+ </nav>
+ <address class="mob-address">
+<ul class="mob-header-list">
+ <li><a class="mob-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+ <li><a class="mob-contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+</ul>
+ </address>
 </div> 
- </header> -->
+ </header>
  <main>
      
       <!-- Hero -->
@@ -90,7 +114,8 @@
         <h2 class="team-title ">Our Team</h2>
         <ul class="team-teatle-link">
             <li class="background">
-                <img  src="./images/img.jpg" alt="Mark Guerrero" width="264" height="260" />
+                <img  srcset="./images/mark 2x.jpg 1x, ./images/mark 2x.jpg 2x"
+                src="./images/img.jpg" alt="Mark Guerrero" width="264" height="260" />
                 <div class="markdiv" ><h3 class="small-name">Mark Guerrero</h3>
                 <p class="text">Product Designer</p>
             <ul class="list-social-icons">
@@ -126,7 +151,8 @@
             </div>
             </li>
             <li class="background">
-                <img src="./images/1.jpg" alt="Tom Ford" width="264" height="260" />
+                <img  srcset="./images/tom2x.jpg 1x, ./images/tom2x.jpg 2x"
+                src="./images/1.jpg" alt="Tom Ford" width="264" height="260" />
                 <div class="markdiv"><h3 class="small-name">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
                 <ul class="list-social-icons">
@@ -162,7 +188,8 @@
             </div>
             </li>
             <li class="background">
-                <img  src="./images/2.jpg" alt="Camila Garcia" width="264" height="260" />
+                <img  srcset="./images/camila 2x.jpg 1x, ./images/camila 2x.jpg 2x"
+                src="./images/2.jpg" alt="Camila Garcia" width="264" height="260" />
                 <div class="markdiv"><h3 class="small-name">Camila Garcia</h3>
                 <p class="text">Marketing</p>
                 <ul class="list-social-icons">
@@ -198,7 +225,8 @@
             </div>
              </li>
              <li class="background">
-                <img src="./images/3.jpg" alt="Daniel Wilson" width="264" height="260" />
+                <img srcset="./images/daniel 2x.jpg 1x, ./images/daniel 2x.jpg 2x"
+                src="./images/3.jpg" alt="Daniel Wilson" width="264" height="260" />
                 <div class="markdiv"><h3 class="small-name">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
                 <ul class="list-social-icons">
@@ -374,7 +402,7 @@
 </div>
 </div>
 </footer>
-<!-- <div class="backdrop">
+<div class="backdrop ">
 <div class="modal">
     <button class="btn-close" type="button">
      <svg class="close" width="8" height="8" >
@@ -429,6 +457,6 @@
 <button class="btn-modal" type="submit">Send</button>
     </form>
 </div>
-</div> -->
+</div>
 </body>
 </html>
