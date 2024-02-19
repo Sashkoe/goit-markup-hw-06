@@ -1233,7 +1233,7 @@ margin: 0 auto;
   }
     
   }
-  .menu-mobile-backdrop .is-open{
+  .menu-mobile-backdrop .is{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
