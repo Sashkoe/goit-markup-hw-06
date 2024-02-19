@@ -1347,9 +1347,8 @@ margin: 0 auto;
 }
 .social-icon {
     fill: #f4f4fd;
-} 
-
-/* @media screen and (max-width: 767px){
+}  
+ @media screen and (max-width: 767px){
     .mob-backdrop {
     display: flex;
     width: 100%;
@@ -1381,11 +1380,7 @@ margin: 0 auto;
     justify-content: center;
     align-items: center;
   }
-  .mob-backdrop.is-open{
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-}
+  
 
  }   
     
@@ -1471,5 +1466,8 @@ margin: 0 auto;
     pointer-events: none;
    
   } 
-     
-   */
+     .mob-backdrop.is-open{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+} 
